@@ -133,7 +133,6 @@ function App() {
       txTable={txTable}
       getOverviewRoute={getOverviewRoute}
       />
-      <h1>The Bank</h1>
       {route=== 'welcome'
       ?
         <Welcome/>
@@ -159,6 +158,7 @@ function App() {
           txDetails={txDetails}
           loginDetails={loginDetails}
           setTxDetails={setTxDetails}
+          getOverviewRoute={getOverviewRoute}
         />
       : route === 'authentication'
       ?

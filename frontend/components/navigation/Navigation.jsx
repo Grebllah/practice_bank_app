@@ -4,8 +4,7 @@ function Navigation(props) {
     return (
         <>
             <Navbar fixed="top" className="justify-content-end">
-                <Button onClick={()=>{props.onRouteChange('authentication')}}>Login</Button>
-                <Button onClick={props.getOverviewRoute}> Overview</Button>
+                <Button onClick={()=>{props.onRouteChange('authentication')}}>Sign In</Button>
                 <Button onClick={()=>{
                     props.onRouteChange('authentication')
                     props.setLoginDetails({
@@ -25,18 +24,6 @@ function Navigation(props) {
                         txCurrency: ''
                     })
                 }}>Sign Out</Button>
-                <Button
-                onClick={()=>{
-                    console.log(props.accDetails)
-                }}>Show accDetails</Button>
-                <Button
-                onClick={()=>{
-                    console.log(props.txTable)
-                }}>Show txTable</Button>
-                <Button
-                onClick={()=>{
-                    fetch("http://127.0.0.1:5555/clear")
-                }}>Clear db</Button>
             </Navbar>
         </>
     )

@@ -18,6 +18,8 @@ function TransferPage(props) {
                     }}
                     >Transfer Now
                     </Button>
+                    <Button onClick={props.getOverviewRoute}> Back to Account</Button>
+
                 </Card.Body>
             </Card>
         </>
